@@ -43,7 +43,7 @@ function addQuote(quote, author) {
     
     const authorP = document.createElement('p');
     authorP.className = 'author';
-    authorP.textContent = `"${author}"`;
+    authorP.textContent = `${author}`;
     
     // Assemblage des éléments
     quoteDiv.appendChild(textP); // en argument les constantes déclarées ci-dessus
