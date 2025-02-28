@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quotations App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <h1>Mes citations</h1>
+        <h2>Gestionnaire de citations en ligne</h2>
+            <h3 id="count">0 citations</h3>
+    <hr>
+
+    <form id="quote-form">
+
+        <div class="form-container">
+            <label for="quote-text">Citation:</label>
+            <input type="text" id="quote-text" placeholder="Entrez votre citation" required>
+        </div>
+
+        <div class="form-container">
+            <!--changement orthographe, écriture inclusive-->
+            <label for="quote-author">Auteur.ice:</label>
+            <input type="text" id="quote-author" placeholder="Entrez le nom de l'auteur.ice" required>
+        </div>
+
+        <button type="submit">Ajouter une citation</button>
+    </form>
+
+
+    <div id="quote-list">
+
+        <div class="quote">
+            <p class="text">"On ne naît pas femme, on le devient."</p>
+            <p class="author">Simone de Beauvoir</p>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
