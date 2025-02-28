@@ -1,7 +1,7 @@
 // Déclaration de la variable qui stocke en valeur le nombre de citations
 let quoteCount = 1; // On démarre à 1 car il y a déjà une citation dans le HTML, je souhaite la laisse
 
-//Fonction pour mettre à jour le compteur de citations
+//Création d'une fonction en dehors du gestionnaire d'évnements, pour mettre à jour le compteur de citations
 function updateQuoteCount() {
     const countElement = document.getElementById('count'); // Récupération de l'élément d'Id Count
     countElement.textContent = `${quoteCount} citation${quoteCount > 1 ? 's' : ''}`; // Sucre syntaxique pour un if ternaire
@@ -30,6 +30,7 @@ document.addEventListener('DOMContentLoaded',() => {
     });
     
  });
+ 
 
  // Fonction pour ajouter une citation avec 2 paramètres: text et author
 function addQuote(quote, author) {
